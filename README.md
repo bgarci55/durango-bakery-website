@@ -1,3 +1,7 @@
+# Durango Bakery #1's Website!
+
+Hello! This is a freelance website made for a local authentic Mexican bakery in Chicago, IL. I had a lot of fun putting this together, check it out!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
