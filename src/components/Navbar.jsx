@@ -1,13 +1,15 @@
 import "../styles/Navbar.css";
+import "../styles/colors.css";
+
 import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
     return (
         <nav className="navbar">
             <div className="navbar-container">
-                <a href="/" className="navbar-logo">
+                {/* <a href="/" className="navbar-logo">
                     Durango Bakery #1
-                </a>
+                </a> */}
 
                 <ul className="navbar-menu">
                     <li>
@@ -17,7 +19,7 @@ export default function Navbar() {
                                 isActive ? "active" : "notActive"
                             }
                         >
-                            Home
+                            home
                         </NavLink>
                     </li>
                     <li>
@@ -27,7 +29,7 @@ export default function Navbar() {
                                 isActive ? "active" : "notActive"
                             }
                         >
-                            About
+                            about
                         </NavLink>
                     </li>
                     <li>
@@ -37,7 +39,7 @@ export default function Navbar() {
                                 isActive ? "active" : "notActive"
                             }
                         >
-                            Contact
+                            contact
                         </NavLink>
                     </li>
                 </ul>
