@@ -1,12 +1,19 @@
-import { Slide } from "react-slideshow-image";
-
 import slideImages from "../assets/images.js";
 import "../styles/Slider.css";
 
+import ForwardArrow from "../assets/SVG/forwardArrow.js";
+import BackwardArrow from "../assets/SVG/backwardArrow.js";
+
 export default function Slider() {
-    return (
-        <div className="container">
-            <Slide easing="ease">
+    return <>
+        <div>
+
+            <button>
+                <span>
+                    <ForwardArrow />
+                </span>
+            </button>
+            <div className="container">
                 {slideImages.map((slide, index) => {
                     return (
                         <div className="slide" key={slide}>
@@ -15,12 +22,18 @@ export default function Slider() {
                                     backgroundImage: `url(${slideImages[index]})`,
                                 }}
                             >
-                                <span>Slide {index + 1}</span>
+                                <span></span>
                             </div>
                         </div>
                     );
                 })}
-            </Slide>
+            </div>
+
+            <button>
+                <span>
+                    <BackwardArrow />
+                </span>
+            </button>
         </div>
-    );
+    </>;
 }
