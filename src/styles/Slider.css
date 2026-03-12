@@ -5,6 +5,21 @@
     padding: 0;
 }
 
+.slider {
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-image {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 .slide>div {
     display: flex;
     align-items: center;
@@ -23,4 +38,34 @@
     color: white;
     /* background: rgba(141, 174, 224, 0.5); */
     text-align: center;
+}
+
+.arrow {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background: grey;
+    border: solid 2px white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.icon {
+    height: 14px;
+    width: 20px;
+    display: inline-block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

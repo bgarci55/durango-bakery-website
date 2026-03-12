@@ -5,6 +5,9 @@ import Navbar from "../../components/Navbar.jsx";
 import Footer from "../../components/Footer.jsx";
 import Slider from "../../components/Slider.jsx";
 
+
+import slideImages from "../../assets/images.js";
+
 export default function HomePage() {
     return (
         <>
@@ -43,7 +46,7 @@ export default function HomePage() {
 
                 <section className="showcase-section">
                     <h2 className="section-title">Artisan Mexican Bread</h2>
-                    <Slider />
+                    <Slider slides={slideImages} />
                     <p className="section-description">
                         Durango Bakery #1 es una panadería artesanal mexicana
                         ubicada en el corazón de Chicago. Nos especializamos en
